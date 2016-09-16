@@ -20,5 +20,8 @@
 ```
   to = 'contactId';
   message = 'Hello world'
-  id = client.sendMessage(to, message);
+  client.sendMessage(to, message);
+    .then(function(id) {
+      console.log("id: ", id);
+    });
 ```

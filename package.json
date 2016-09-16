@@ -2,7 +2,10 @@
   "name": "ongair",
   "version": "1.0.0",
   "description": "Ongair API client",
-  "main": "ongair.js",
+  "directories": {
+    "lib": "./lib"
+  },
+  "main": "./lib/client",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,6 +16,9 @@
   "keywords": [
     "Ongair"
   ],
-  "author": "Ongair",
-  "license": "MIT"
+  "author": "Ongair (hello@ongair.im)",
+  "license": "MIT",
+  "dependencies": {
+    "request": "^2.74.0"
+  }
 }
