@@ -31,3 +31,14 @@
       console.log("id: ", id);
     });
 ```
+
+##### 2. Sending a text message with some quick reply options
+
+```
+  to = 'contactId';
+  message = 'Hello world'
+  client.sendMessage(to, message, "Yes,No");
+    .then(function(id) {
+      console.log("id: ", id);
+    });
+```
