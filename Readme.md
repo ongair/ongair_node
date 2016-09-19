@@ -42,3 +42,16 @@
       console.log("id: ", id);
     });
 ```
+
+##### 3. Sending an image with a caption
+
+```
+  to = 'contactid';
+  caption = 'What a wonderful world';
+  url = 'http://example.com/demo.gif';
+  contentType = 'image/gif';
+  client.sendImage(to, url, contentType,caption);
+    .then(function(id:) {
+      console.log("Send image id:", id);
+    });
+```
