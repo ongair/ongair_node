@@ -18,7 +18,7 @@
 ```
   var Ongair = require('ongair');
   var token = process.env.TOKEN || 'my-token'
-  var client = new Ongair(token)
+  var client = new Ongair.Client(token)
 ```
 
 ##### 1. Sending a simple text message
