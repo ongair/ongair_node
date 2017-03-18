@@ -1,13 +1,13 @@
 {
   "name": "ongair",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Ongair API client",
   "directories": {
     "lib": "./lib"
   },
-  "main": "./lib/client",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,10 @@
   "license": "MIT",
   "dependencies": {
     "request": "^2.74.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "sinon": "^2.0.0"
   }
 }
