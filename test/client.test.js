@@ -12,7 +12,7 @@ describe('The ongair client', () => {
     before(() => {
       sinon
         .stub(request, 'post')
-        .yields(null, { statusCode: 200 }, JSON.stringify({ success: true }));
+        .yields(null, { statusCode: 200 }, { success: true });
     })
 
     it('Can send a text message', (done) => {
