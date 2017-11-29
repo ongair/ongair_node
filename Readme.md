@@ -51,7 +51,20 @@
   url = 'http://example.com/demo.gif';
   contentType = 'image/gif';
   client.sendImage(to, url, contentType,caption);
-    .then(function(id:) {
+    .then(function(id) {
       console.log("Send image id:", id);
     });
 ```
+
+
+
+##### 4. Sending a location request
+
+```
+  to = 'contact_id'
+  caption ="Please share your location"
+
+  client.sendLocationPrompt(to, caption)
+    .then(function(id) {
+      console.log("Sent location request", id)
+    })
