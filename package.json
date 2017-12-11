@@ -1,6 +1,6 @@
 {
   "name": "ongair",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "description": "Ongair API client",
   "directories": {
     "lib": "./lib"
