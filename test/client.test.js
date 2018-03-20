@@ -49,4 +49,23 @@ describe('The ongair client', () => {
 
   })
 
+  describe('Can send prompts', () => {
+    it('Can send a tel prompt', (done) => {
+
+      let client = new Client('token')
+      nock('https://ongair.im:443')
+        .post('/api/v1/base/send_telephone_prompt', "token=token&external_id=12345&thread=true&text=What%20is%20your%20number%3F")
+        .reply(200, JSON.stringify({ id: '12345' }))
+
+      client.sendTelephonePrompt('12345', "What is your number?")
+        .then(id => {
+          expect(id).to.be.equal('12345')
+          done()
+        })
+        .catch(ex => {
+          console.log('Error', ex)
+        })
+    })
+  })
+
 })
